@@ -25,3 +25,7 @@ double Stock::getHighPrice() { return hPrice; }
 double Stock::getLowPrice() { return lPrice; }
 double Stock::getPrevPrice() { return pPrice; }
 double Stock::getPercent() { return percent; }
+//Reserved for features
+//void Stock::someFeatures(){ code }
+
+//TODO constructor - COMING SOON

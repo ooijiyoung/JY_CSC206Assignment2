@@ -36,6 +36,11 @@ public:
 	double getLowPrice();
 	double getPrevPrice();
 	double getPercent();
+	//features
+	
+	//constructor
+	Stock();
+
 
 };
 
