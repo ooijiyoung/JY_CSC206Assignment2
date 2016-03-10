@@ -144,9 +144,11 @@
   <ItemGroup>
     <ClCompile Include="JiYoung.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Stock.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="JiYoung.h" />
+    <ClInclude Include="Stock.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

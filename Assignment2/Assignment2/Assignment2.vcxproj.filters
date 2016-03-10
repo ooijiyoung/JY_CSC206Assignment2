@@ -21,9 +21,15 @@
     <ClCompile Include="JiYoung.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Stock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="JiYoung.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stock.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
