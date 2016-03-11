@@ -2,7 +2,6 @@
 #include <string>
 #include "Stock.h"
 using namespace std;
-
 //IMPOEKOEPOTAJIPOEJIPO ijofijeio jioGirbnjoeg
 
 //setter
