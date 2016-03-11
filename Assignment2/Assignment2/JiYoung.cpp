@@ -110,12 +110,13 @@ double JiYoung::largerThanZeroDouble() {
 	return validDouble;
 }
 
+//this method is to get Windows Version
 string JiYoung::getOSVersion() {
 	ifstream fileIn;
 	string osver;
 	string OSName;
-	system("ver > ver.txt");
-	fileIn.open("ver.txt");
+	system("ver > ver");
+	fileIn.open("ver");
 	if (fileIn.is_open()) {
 		getline(fileIn, osver, '\n');
 		getline(fileIn, osver, '\n');
@@ -140,6 +141,6 @@ string JiYoung::getOSVersion() {
 		OSName = "Unknown OS";
 	}
 	fileIn.close();
-	system("del ver.txt");
+	system("del ver");
 	return OSName;
 }
