@@ -2,7 +2,7 @@
 #include <iostream>
 #include <iomanip>
 #include <sstream>
-
+#include <fstream>
 using namespace std;
 
 //Check if it's a valid integer value and prevent buffer garbage
@@ -108,4 +108,38 @@ double JiYoung::largerThanZeroDouble() {
 		}
 	}
 	return validDouble;
+}
+
+string JiYoung::getOSVersion() {
+	ifstream fileIn;
+	string osver;
+	string OSName;
+	system("ver > ver.txt");
+	fileIn.open("ver.txt");
+	if (fileIn.is_open()) {
+		getline(fileIn, osver, '\n');
+		getline(fileIn, osver, '\n');
+		if (osver.find("10.0") != string::npos) {
+			OSName = "Windows 10";
+		}
+		else if (osver.find("6.3") != string::npos) {
+			OSName = "Windows 8.1";
+		}
+		else if (osver.find("6.2") != string::npos) {
+			OSName = "Windows 8";
+		}
+		else if (osver.find("6.1") != string::npos) {
+			OSName = "Windows 7";
+		}
+		else {
+			OSName = "Windows Vista";
+		}
+		//windows xp wont able to run at all (not a Win32 app)
+	}
+	else {
+		OSName = "Unknown OS";
+	}
+	fileIn.close();
+	system("del ver.txt");
+	return OSName;
 }

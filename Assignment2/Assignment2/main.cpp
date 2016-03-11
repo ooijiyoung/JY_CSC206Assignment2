@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include "JiYoung.h"
+#include <windows.h>
+#include <fstream>
 using namespace std;
 //just making sure they don't fluctuate
 const int ONE = 1;
@@ -16,7 +18,6 @@ const int TEN = 10;
 
 int main(void) {
 	JiYoung ojy;
-
 	ojy.getch();
 	return 0;
 }

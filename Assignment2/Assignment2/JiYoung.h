@@ -24,6 +24,7 @@ class JiYoung {
 		string doubleToStrPrecis(double, int);
 		int largerThanZeroInt();
 		double largerThanZeroDouble();
+		string getOSVersion();
 };
 
 #endif // !_JIYOUNG_
