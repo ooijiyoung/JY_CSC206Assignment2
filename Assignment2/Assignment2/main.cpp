@@ -1,10 +1,12 @@
 #include <iostream>
 #include <string>
 #include "JiYoung.h"
-#include <windows.h>
+#include <Windows.h>
 #include <fstream>
 #include "Stock.h"
+
 using namespace std;
+
 //just making sure they don't fluctuate
 const int ONE = 1;
 const int TWO = 2;
