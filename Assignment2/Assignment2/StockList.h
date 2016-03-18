@@ -1,13 +1,18 @@
 #pragma once
+#include "Stock.h"
 #ifndef _STOCKLIST_
 #define _STOCKLIST_
 
 class StockListType
 {
+protected:
+	Stock * stock;
+	int stockList;
 public:
 	StockListType();
 	~StockListType();
-protected:
+	virtual void printReportSymb();
+	virtual void printReportGain();
 
 };
 
