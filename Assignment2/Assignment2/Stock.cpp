@@ -27,4 +27,11 @@ double Stock::getPercent() { return percent; }
 //Reserved for features
 //void Stock::someFeatures(){ code }
 
+void Stock::setStockInfo(){
+
+}
+
+void Stock::printStockInfo() {
+
+}
 //TODO constructor - COMING SOON
