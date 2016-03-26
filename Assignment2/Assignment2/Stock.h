@@ -39,6 +39,7 @@ public:
 	//features
 	void setStockInfo();
 	void printStockInfo();
+	void CalGainLose();	
 	//constructor
 	Stock();
 

@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
 #include "Stock.h"
+
 using namespace std;
-//IMPOEKOEPOTAJIPOEJIPO ijofijeio jioGirbnjoeg
 
 //setter
 void Stock::setSymbol(string sim) {	symbol = sim;}
@@ -25,13 +25,21 @@ double Stock::getLowPrice() { return lPrice; }
 double Stock::getPrevPrice() { return pPrice; }
 double Stock::getPercent() { return percent; }
 //Reserved for features
-//void Stock::someFeatures(){ code }
+
 
 void Stock::setStockInfo(){
-
+	/*
+	ask sir about this set stock as there's virtually no way to set the stock as we cant enter it in the console 
+	since sir said no input from console
+	*/
 }
 
 void Stock::printStockInfo() {
+	cout << symbol << oPrice << cPrice << hPrice << lPrice << pPrice << percent << shares << endl;
+	//tweak it to display multiple rows of information
+}
+
+void Stock::CalGainLose() {
 
 }
 //TODO constructor - COMING SOON
