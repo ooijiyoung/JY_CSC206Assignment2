@@ -24,6 +24,8 @@ StockListType::~StockListType()
 {
 }
 
+//STOCK LIST MANGER CLASS
+
 class StockListManager : protected StockListType
 {
 public:
