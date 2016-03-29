@@ -43,3 +43,26 @@ void Stock::CalGainLose() {
 
 }
 //TODO constructor - COMING SOON
+Stock::Stock() {
+	symbol = "NULL";
+	price = 0.0;
+	shares = 0;
+	oPrice = 0;
+	cPrice = 0;
+	hPrice = 0;
+	lPrice = 0;
+	pPrice = 0;
+	percent = 0;
+}
+
+Stock::Stock(string sym, double p, int shr, double oP, double cP, double hP, double lP, double pP, double perc) {
+	symbol = sym;
+	price = p;
+	shares = shr;
+	oPrice = oP;
+	cPrice = cP;
+	hPrice = hP;
+	lPrice = lP;
+	pPrice = pP;
+	percent = perc;
+}

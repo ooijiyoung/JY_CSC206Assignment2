@@ -24,9 +24,6 @@
     <ClCompile Include="Stock.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StockList.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="JiYoung.h">
@@ -35,7 +32,10 @@
     <ClInclude Include="Stock.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="StockList.h">
+    <ClInclude Include="StockListType.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StockListManager.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

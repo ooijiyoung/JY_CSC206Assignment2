@@ -4,7 +4,6 @@
 #include <Windows.h>
 #include <fstream>
 #include "Stock.h"
-#include "StockList.h"
 
 using namespace std;
 
