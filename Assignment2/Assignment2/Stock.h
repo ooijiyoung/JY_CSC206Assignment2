@@ -42,7 +42,7 @@ public:
 	void CalGainLose();	
 	//constructor
 	Stock();
-
+	Stock(string s, double p, int shr, double oP, double cP, double hP, double lP, double pP, double perc);
 
 };
 

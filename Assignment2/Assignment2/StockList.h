@@ -5,7 +5,7 @@
 
 class StockListType
 {
-protected:
+private:
 	Stock * stock;
 	int stockList;
 public:
@@ -18,6 +18,7 @@ public:
 
 StockListType::StockListType()
 {
+	
 }
 
 StockListType::~StockListType()
@@ -26,7 +27,7 @@ StockListType::~StockListType()
 
 //STOCK LIST MANGER CLASS
 
-class StockListManager : protected StockListType
+class StockListManager : public StockListType
 {
 public:
 	StockListManager();
