@@ -145,6 +145,8 @@
     <ClCompile Include="JiYoung.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Stock.cpp" />
+    <ClCompile Include="StockListManager.cpp" />
+    <ClCompile Include="StockListType.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="JiYoung.h" />

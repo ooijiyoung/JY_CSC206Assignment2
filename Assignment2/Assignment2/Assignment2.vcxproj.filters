@@ -24,6 +24,12 @@
     <ClCompile Include="Stock.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="StockListManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StockListType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="JiYoung.h">
