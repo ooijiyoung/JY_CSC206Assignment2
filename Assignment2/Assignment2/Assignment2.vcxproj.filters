@@ -32,9 +32,6 @@
     <ClInclude Include="Stock.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="StockListType.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="StockListManager.h">
       <Filter>Source Files</Filter>
     </ClInclude>
