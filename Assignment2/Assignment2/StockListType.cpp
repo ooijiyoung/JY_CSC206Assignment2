@@ -3,7 +3,6 @@
 #include <iostream>
 #include "JiYoung.h"
 
-extern JiYoung ojy;
 void StockListType::printHead() {
 	ojy.printRpt("*", 10);
 	cout << " JY Solutions ";
@@ -13,4 +12,11 @@ void StockListType::printHead() {
 	cout << " Financial Report ";
 	ojy.printRpt("*", 10);
 	cout << endl;
+}
+
+StockListType::StockListType() {
+
+}
+StockListType::~StockListType() {
+
 }

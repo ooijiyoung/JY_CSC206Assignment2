@@ -12,6 +12,7 @@ using namespace std;
 #define _StockListType_
 
 class StockListType {
+	JiYoung ojy;
 private:
 	Stock *stock;
 	int stockSize;

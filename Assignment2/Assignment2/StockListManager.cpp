@@ -2,11 +2,17 @@
 #include "StockListManager.h"
 #include <iostream>
 #include "JiYoung.h"
+void StockListManager::printReportBYGain() {
+	
+}
+void StockListManager::printReportBySymb() {
 
-StockListManager::StockListManager()
-{
+}
+void StockListManager::sort() {
+
+}
+StockListManager::StockListManager(){
 }
 
-StockListManager::~StockListManager()
-{
+StockListManager::~StockListManager(){
 }
