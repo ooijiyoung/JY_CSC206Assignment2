@@ -16,7 +16,18 @@ private:
 	Stock *stock;
 	int stockSize;
 public:
-
+	virtual void printReportBySymb()=0;
+	virtual void printReportBYGain()=0;
+	virtual void sort() = 0;
+	void printHead();
+	void printTrail();
+	void printStock();
+	//setter
+	void setStockSize(int x);
+	//getter
+	int getStockSize();
+	StockListType();
+	~StockListType();
 };
 
 

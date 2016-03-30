@@ -7,18 +7,13 @@
 
 class StockListManager : public StockListType
 {
+private:
+	//NULL
 public:
+	void printReportBySymb();
+	void printReportBYGain();
 	StockListManager();
 	~StockListManager();
 
-private:
-
+	
 };
-
-StockListManager::StockListManager()
-{
-}
-
-StockListManager::~StockListManager()
-{
-}
