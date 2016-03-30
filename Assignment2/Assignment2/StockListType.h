@@ -18,7 +18,7 @@ private:
 public:
 	virtual void printReportBySymb()=0;
 	virtual void printReportBYGain()=0;
-	virtual void sort() = 0;
+	virtual void sort()=0;
 	void printHead();
 	void printTrail();
 	void printStock();

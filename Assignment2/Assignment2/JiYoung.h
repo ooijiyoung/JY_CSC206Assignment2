@@ -25,6 +25,7 @@ class JiYoung {
 		int largerThanZeroInt();
 		double largerThanZeroDouble();
 		string getOSVersion();
+		void printRpt(string,int);
 };
 
 #endif // !_JIYOUNG_

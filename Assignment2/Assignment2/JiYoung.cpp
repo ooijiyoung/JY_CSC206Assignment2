@@ -144,3 +144,9 @@ string JiYoung::getOSVersion() {
 	system("del ver");
 	return OSName;
 }
+
+void JiYoung::printRpt(string s,int i) {
+	for (int x = 0; x < i; x++) {
+		cout << s;
+	}
+}
