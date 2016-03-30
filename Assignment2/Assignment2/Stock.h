@@ -1,6 +1,9 @@
 #pragma once
+#include <fstream>
 #include <string>
+
 using namespace std;
+
 #ifndef _STOCK_
 #define _STOCK_
 
@@ -8,7 +11,7 @@ class Stock {
 private:
 	string symbol;
 	double price; //stock Price
-	int shares; // number of shares
+	int shares; // number of shares (Volume)
 	double oPrice; //opening price
 	double cPrice; //closing price
 	double hPrice; //high price
@@ -41,9 +44,10 @@ public:
 	void printStockInfo();
 	void CalGainLose();	
 	//constructor
+	//ASK: Do we need constructor arr?
 	Stock();
 	Stock(string s, double p, int shr, double oP, double cP, double hP, double lP, double pP, double perc);
-
+	friend ifstream & operator >> (ifstream & fileIn, Stock &);
 };
 
 

@@ -66,3 +66,30 @@ Stock::Stock(string sym, double p, int shr, double oP, double cP, double hP, dou
 	pPrice = pP;
 	percent = perc;
 }
+
+ifstream & operator >> (ifstream & fileIn, Stock & s) {
+	try
+	{
+		string line;
+		getline(fileIn, line, ' '); //Symbol
+		s.symbol = line;
+		getline(fileIn, line, ' '); //Opening Price
+		s.oPrice = stod(line);
+		getline(fileIn, line, ' '); //closing Price
+		s.cPrice = stod(line);
+		getline(fileIn, line, ' '); //todayHigh
+		s.hPrice = stod(line);
+		getline(fileIn, line, ' '); //todayLow
+		s.lPrice = stod(line);
+		getline(fileIn, line, ' '); //prevClose
+		s.pPrice = stod(line);
+		getline(fileIn, line, ' '); //Volume
+		s.shares = stoi(line);
+	}
+	catch (const std::exception &exc)
+	{
+		cout << "FATAL" << endl;
+		cout << "unhandled exception" << endl;
+	}
+	return fileIn;
+}
