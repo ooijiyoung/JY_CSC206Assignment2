@@ -10,7 +10,6 @@ More updated to add more new features for assignment 2!
 #ifndef _JIYOUNG_
 #define _JIYOUNG_
 #undef max
-
 //utility class
 class JiYoung {
 	public:
@@ -26,6 +25,7 @@ class JiYoung {
 		double largerThanZeroDouble();
 		string getOSVersion();
 		void printRpt(string,int);
+		void about();
 };
 
 #endif // !_JIYOUNG_

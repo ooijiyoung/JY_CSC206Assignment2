@@ -150,3 +150,7 @@ void JiYoung::printRpt(string s,int i) {
 		cout << s;
 	}
 }
+
+void JiYoung::about() {
+	cout << endl << "JiYoung Utility Class \n Author: Ooi Ji Young" << endl;
+}
