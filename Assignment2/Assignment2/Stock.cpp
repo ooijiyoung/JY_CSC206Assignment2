@@ -40,7 +40,7 @@ void Stock::printStockInfo() {
 }
 
 void Stock::CalGainLose() {
-
+	percent = ((cPrice - pPrice) / pPrice) * 100;
 }
 //TODO constructor - COMING SOON
 Stock::Stock() {
@@ -85,6 +85,7 @@ ifstream & operator >> (ifstream & fileIn, Stock & s) {
 		s.pPrice = stod(line);
 		getline(fileIn, line, '\n'); //Volume
 		s.shares = stoi(line);
+		s.CalGainLose();
 	}
 	catch (const std::exception &exc)
 	{
