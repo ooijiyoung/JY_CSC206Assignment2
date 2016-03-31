@@ -35,7 +35,8 @@ public:
 	int getShares();
 	double getOpening();
 	double getClosing();
-	double getHighPrice(); //get High Ahahahhahahha
+	//get High Ahahahhahahha
+	double getHighPrice(); 
 	double getLowPrice();
 	double getPrevPrice();
 	double getPercent();
