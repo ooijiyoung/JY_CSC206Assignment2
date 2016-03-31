@@ -74,7 +74,7 @@ void JiYoung::doNothing() {
 string JiYoung::doubleToStrPrecis(double a, int n)
 {
 	ostringstream out;
-	out << fixed << showpoint << setprecision(2) << a;
+	out << fixed << showpoint << setprecision(n) << a;
 	return out.str();
 }
 

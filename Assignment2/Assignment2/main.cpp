@@ -15,6 +15,7 @@ int main(void) {
 	string UserOS = ojy.getOSVersion();
 	StockListManager st;
 	st.printHead();
+	st.printStock();
 	st.printTrail();
 	//ShellExecute(NULL, L"open", L"path.to.exe", NULL, NULL, SW_SHOWDEFAULT);
 	ojy.getch();

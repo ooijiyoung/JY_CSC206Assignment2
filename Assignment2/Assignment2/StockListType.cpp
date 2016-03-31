@@ -41,10 +41,29 @@ void StockListType::printTrail() {
 		closeAss += stock[x]->getClosing() * stock[x]->getShares();
 	}
 	cout << "Closing Assets: $" << closeAss <<endl;
-	ojy.printRpt("-x", 20);
+	ojy.printRpt("-x", 40);
 }
+
+void StockListType::printStock() {
+	for (int x = 0; x < stockSize - 1; x++) {
+		cout << stock[x]->getSymbol();
+		ojy.setw(stock[x]->getSymbol(), 8);
+		cout << ojy.doubleToStrPrecis(stock[x]->getOpening(),2); ojy.setw(ojy.doubleToStrPrecis(stock[x]->getOpening(), 2), 8); 
+		cout << ojy.doubleToStrPrecis(stock[x]->getClosing(), 2); ojy.setw(ojy.doubleToStrPrecis(stock[x]->getClosing(), 2), 8);
+		cout << ojy.doubleToStrPrecis(stock[x]->getHighPrice(), 2); ojy.setw(ojy.doubleToStrPrecis(stock[x]->getHighPrice(), 2), 8); 
+		cout << ojy.doubleToStrPrecis(stock[x]->getLowPrice(), 2); ojy.setw(ojy.doubleToStrPrecis(stock[x]->getLowPrice(), 2), 8);
+		cout << ojy.doubleToStrPrecis(stock[x]->getPrevPrice(), 2); ojy.setw(ojy.doubleToStrPrecis(stock[x]->getPrevPrice(), 2), 10);
+		cout << ojy.doubleToStrPrecis(stock[x]->getPercent(), 2)<<"%"; ojy.setw(ojy.doubleToStrPrecis(stock[x]->getPercent(), 2), 14);
+		cout << stock[x]->getShares() << endl;
+	}
+}
+
 void StockListType::setStockSize(int x) {
 	stockSize = x;
+}
+
+int StockListType::getStockSize() {
+	return stockSize;
 }
 
 StockListType::StockListType() {
