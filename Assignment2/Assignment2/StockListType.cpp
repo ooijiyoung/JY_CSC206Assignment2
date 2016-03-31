@@ -23,11 +23,10 @@ StockListType::StockListType() {
 	fileIn.open("stock.txt");
 	if (fileIn.is_open()) {
 		while (!fileIn.eof()) {
-
-			stock = new Stock[7];
-			fileIn >> stock[totalStockNo - 1];
-			totalStockNo++;
 			cout << totalStockNo;
+			stock = new Stock[7];
+			fileIn >> stock[totalStockNo];
+			totalStockNo++;
 		}
 	}
 	for (int x = 0; x < totalStockNo; x++) {
