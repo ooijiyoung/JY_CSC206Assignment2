@@ -15,6 +15,10 @@ void StockListType::printHead() {
 	cout << endl;
 }
 
+void StockListType::setStockSize(int x) {
+	stockSize = x;
+}
+
 StockListType::StockListType() {
 	//read stock file
 	ifstream fileIn;
@@ -23,15 +27,16 @@ StockListType::StockListType() {
 	fileIn.open("stock.txt");
 	if (fileIn.is_open()) {
 		while (!fileIn.eof()) {
-			cout << totalStockNo;
 			stock[totalStockNo] = new Stock();
 			fileIn >> *stock[totalStockNo];
 			totalStockNo++;
 		}
 	}
+	//debug
 	for (int x = 0; x < totalStockNo; x++) {
 		cout << stock[x]->getSymbol() << endl;
 	}
+	setStockSize(totalStockNo + 1);
 }
 StockListType::~StockListType() {
 

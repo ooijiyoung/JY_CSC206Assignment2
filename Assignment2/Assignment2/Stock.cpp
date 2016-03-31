@@ -73,25 +73,18 @@ ifstream & operator >> (ifstream & fileIn, Stock & s) {
 		string line;
 		getline(fileIn, line, ' '); //Symbol
 		s.symbol = line;
-		cout << line << " ";
 		getline(fileIn, line, ' '); //Opening Price
 		s.oPrice = stod(line);
-		cout << line << " ";
 		getline(fileIn, line, ' '); //closing Price
 		s.cPrice = stod(line);
-		cout << line << " ";
 		getline(fileIn, line, ' '); //todayHigh
 		s.hPrice = stod(line);
-		cout << line << " ";
 		getline(fileIn, line, ' '); //todayLow
 		s.lPrice = stod(line);
-		cout << line << " ";
 		getline(fileIn, line, ' '); //prevClose
 		s.pPrice = stod(line);
-		cout << line << " ";
 		getline(fileIn, line, '\n'); //Volume
 		s.shares = stoi(line);
-		cout << line << endl;
 	}
 	catch (const std::exception &exc)
 	{
