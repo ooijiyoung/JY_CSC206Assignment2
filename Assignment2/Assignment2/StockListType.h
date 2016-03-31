@@ -14,7 +14,7 @@ using namespace std;
 class StockListType {
 	JiYoung ojy;
 private:
-	Stock *stock;
+	Stock *stock[20];
 	int stockSize;
 public:
 	virtual void printReportBySymb()=0;

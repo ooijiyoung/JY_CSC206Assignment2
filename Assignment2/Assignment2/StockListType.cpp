@@ -24,13 +24,13 @@ StockListType::StockListType() {
 	if (fileIn.is_open()) {
 		while (!fileIn.eof()) {
 			cout << totalStockNo;
-			stock = new Stock[7];
-			fileIn >> stock[totalStockNo];
+			stock[totalStockNo] = new Stock();
+			fileIn >> *stock[totalStockNo];
 			totalStockNo++;
 		}
 	}
 	for (int x = 0; x < totalStockNo; x++) {
-		cout << stock[x].getSymbol() << endl;
+		cout << stock[x]->getSymbol() << endl;
 	}
 }
 StockListType::~StockListType() {
