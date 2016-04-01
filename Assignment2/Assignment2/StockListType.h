@@ -1,19 +1,36 @@
 #pragma once
-#include "Stock.h"
-#ifndef _STOCKLISTTYPE_
-#define _STOCKLISTTYPE_
 
-class StockListType
-{
-private:
-	Stock * stock;
-	int stockList;
+#include <iostream>
+#include <fstream>
+#include <string>
+#include "Stock.h"
+#include "JiYoung.h"
+
+using namespace std;
+
+#ifndef _StockListType_
+#define _StockListType_
+
+class StockListType {
+	JiYoung ojy;
+protected:
+	Stock *stock[256];
+	int stockSize;
 public:
+	virtual void printReportBySymb()=0;
+	virtual void printReportBYGain()=0;
+	virtual void sort()=0;
+	void printHead();
+	void printTrail();
+	void printStock();
+	//setter
+	void setStockSize(int x);
+	//getter
+	int getStockSize();
 	StockListType();
 	~StockListType();
-	virtual void printReportSymb();
-	virtual void printReportGain();
-
 };
 
-#endif _STOCKLISTTYPE_
+
+
+#endif // !_StockListType_

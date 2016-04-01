@@ -74,7 +74,7 @@ void JiYoung::doNothing() {
 string JiYoung::doubleToStrPrecis(double a, int n)
 {
 	ostringstream out;
-	out << fixed << showpoint << setprecision(2) << a;
+	out << fixed << showpoint << setprecision(n) << a;
 	return out.str();
 }
 
@@ -143,4 +143,14 @@ string JiYoung::getOSVersion() {
 	fileIn.close();
 	system("del ver");
 	return OSName;
+}
+
+void JiYoung::printRpt(string s,int i) {
+	for (int x = 0; x < i; x++) {
+		cout << s;
+	}
+}
+
+void JiYoung::about() {
+	cout << endl << "JiYoung Utility Class \n Author: Ooi Ji Young" << endl;
 }

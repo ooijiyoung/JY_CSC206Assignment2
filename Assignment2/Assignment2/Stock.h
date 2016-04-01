@@ -20,22 +20,23 @@ private:
 	double percent; //percent gain/loss
 public:
 	//setter
-	void setSymbol(string sim);
-	void setPrice(double p);
-	void setShares(int s);
-	void setOpening(double o);
-	void setClosing(double c);
-	void setHighPrice(double h);
-	void setLowPrice(double l);
-	void setPrevPrice(double pp);
-	void setPercent(double per);
+	void setSymbol(string);
+	void setPrice(double);
+	void setShares(int);
+	void setOpening(double);
+	void setClosing(double);
+	void setHighPrice(double);
+	void setLowPrice(double);
+	void setPrevPrice(double);
+	void setPercent(double);
 	//getter
 	string getSymbol();
 	double getPrice();
 	int getShares();
 	double getOpening();
 	double getClosing();
-	double getHighPrice();
+	//get High Ahahahhahahha
+	double getHighPrice(); 
 	double getLowPrice();
 	double getPrevPrice();
 	double getPercent();
