@@ -10,6 +10,7 @@ void StockListManager::printReportBySymb() {
 }
 void StockListManager::sort() {
 	//insert sorting agrothm
+	
 }
 StockListManager::StockListManager(){
 }

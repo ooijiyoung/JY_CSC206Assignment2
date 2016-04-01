@@ -13,7 +13,7 @@ using namespace std;
 
 class StockListType {
 	JiYoung ojy;
-private:
+protected:
 	Stock *stock[256];
 	int stockSize;
 public:
