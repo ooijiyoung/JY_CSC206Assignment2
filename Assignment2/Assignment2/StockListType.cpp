@@ -3,17 +3,18 @@
 #include <iostream>
 #include "JiYoung.h"
 #include <fstream>
+#include <Windows.h>
 
 void StockListType::printHead() {
-	ojy.printRpt("*", 10);
+	ojy.printRpt("*", 30);
 	cout << "   JY Solutions ";
 	ojy.setw("   JY Solutions ", 20);
-	ojy.printRpt("*", 10);
+	ojy.printRpt("*", 30);
 	cout << endl;
-	ojy.printRpt("*", 10);
+	ojy.printRpt("*", 30);
 	cout << " Financial Report ";
 	ojy.setw(" Financial Report ", 20);
-	ojy.printRpt("*", 10);
+	ojy.printRpt("*", 30);
 	cout << endl;
 	cout << "Stock          Today";
 	ojy.setw("Stock          Today", 40);
@@ -84,14 +85,14 @@ StockListType::StockListType() {
 			totalStockNo++;
 		}
 	}
-	//debug
-	/* yep its working
-	for (int x = 0; x < totalStockNo; x++) {
-		cout << stock[x]->getSymbol() << endl;
+	else {
+		cout << "Error: File Not Found!" << endl;
+		MessageBox(NULL, L"Unable to read or open file.\n Please make sure \"Stock.txt\" is accessible and in the same directory.\nThis program will be terminated", L"Error", MB_OK | MB_ICONERROR);
+		exit(1);
 	}
-	*/
+	
 	setStockSize(totalStockNo + 1); //cause 
 }
 StockListType::~StockListType() {
-	//delete[] stock;
+	//virtual 
 }

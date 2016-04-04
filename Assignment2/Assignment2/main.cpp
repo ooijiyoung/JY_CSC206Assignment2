@@ -20,7 +20,6 @@ int main(void) {
 		printMenu();
 		
 	}
-	
 	ojy.getch();
 	return 0;
 }

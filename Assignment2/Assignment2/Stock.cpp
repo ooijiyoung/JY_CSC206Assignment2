@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include "Stock.h"
-
+#include <Windows.h>
 using namespace std;
 
 //setter
@@ -90,7 +90,8 @@ ifstream & operator >> (ifstream & fileIn, Stock & s) {
 	catch (const std::exception &exc)
 	{
 		cout << "FATAL" << endl;
-		cout << "unhandled exception" << endl;
+		MessageBox(NULL, L"An unknown error occurred. Check Stock.txt \nThis program will be terminated", L"Error", MB_OK | MB_ICONERROR);
+		exit(1);
 	}
 	return fileIn;
 }
