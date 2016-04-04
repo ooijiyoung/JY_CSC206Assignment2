@@ -11,11 +11,11 @@ using namespace std;
 JiYoung ojy;
 StockListManager st;
 void printMenu();
+void chckWinVer(); 
 
 int main(void) {
 	cout << fixed << showpoint << setprecision(2);
-	string UserOS = ojy.getOSVersion();
-	//ShellExecute(NULL, L"open", L"c:\\Windows\\System32\\GWX\\GWX.exe", NULL, NULL, SW_SHOWDEFAULT);
+	chckWinVer();
 	for (;;) {
 		printMenu();
 		
@@ -59,4 +59,13 @@ void printMenu() {
 		MessageBox(NULL, L"Invalid Entry\nPlease Try Again!", L"Error", MB_OK | MB_ICONERROR);
 		break;
 	}
+}
+
+void chckWinVer() {
+	string UserOS = ojy.getOSVersion();
+	if ( UserOS != "Windows 10") {
+		MessageBox(NULL, L"It seems you're runing an older version on Windows.\nUpgrade to Windows 10 today! Press OK to learn more about Windows 10", L"Warning", MB_OK | MB_ICONEXCLAMATION);
+		ShellExecute(NULL, L"open", L"https://www.microsoft.com/en-us/windows/windows-10-upgrade", NULL, NULL, SW_SHOWDEFAULT);
+	}
+	
 }
