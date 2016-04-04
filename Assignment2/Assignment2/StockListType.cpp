@@ -75,6 +75,11 @@ StockListType::StockListType() {
 	if (fileIn.is_open()) {
 		while (!fileIn.eof()) {
 			stock[totalStockNo] = new Stock();
+			if (stock == NULL)
+			{
+				cout << "Error allocating memory!\n";
+				
+			}
 			fileIn >> *stock[totalStockNo];
 			totalStockNo++;
 		}
@@ -88,5 +93,4 @@ StockListType::StockListType() {
 	setStockSize(totalStockNo + 1); //cause 
 }
 StockListType::~StockListType() {
-
 }
