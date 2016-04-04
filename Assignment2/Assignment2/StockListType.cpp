@@ -93,4 +93,5 @@ StockListType::StockListType() {
 	setStockSize(totalStockNo + 1); //cause 
 }
 StockListType::~StockListType() {
+	//delete[] stock;
 }
