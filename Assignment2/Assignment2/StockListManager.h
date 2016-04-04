@@ -12,7 +12,7 @@ private:
 public:
 	void printReportBySymb();
 	void printReportBYGain();
-	void sort(Stock *s, int length);
+	void sort();
 	StockListManager();
 	~StockListManager();
 
