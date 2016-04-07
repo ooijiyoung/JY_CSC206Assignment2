@@ -3,6 +3,7 @@
 #include "Stock.h"
 #include "StockListType.h"
 #include "JiYoung.h"
+
 //STOCK LIST MANGER CLASS
 class StockListManager : public StockListType
 {
@@ -15,6 +16,4 @@ public:
 	void sort();
 	StockListManager();
 	~StockListManager();
-
-	
 };

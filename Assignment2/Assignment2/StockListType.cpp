@@ -5,6 +5,7 @@
 #include <fstream>
 #include <Windows.h>
 
+//header
 void StockListType::printHead() {
 	ojy.printRpt("*", 30);
 	cout << "   JY Solutions ";
@@ -16,8 +17,8 @@ void StockListType::printHead() {
 	ojy.setw(" Financial Report ", 20);
 	ojy.printRpt("*", 30);
 	cout << endl;
-	cout << "Stock          Today";
-	ojy.setw("Stock          Today", 40);
+	cout << "Stock           Today";
+	ojy.setw("Stock           Today", 40);
 	cout << "Previous  Percent";
 	cout << endl;
 
@@ -36,6 +37,7 @@ void StockListType::printHead() {
 	cout << "--------" << endl;
 }
 
+//footer
 void StockListType::printTrail() {
 	double closeAss=0.0; //Closing Asset
 	for (int x = 0; x < stockSize - 1; x++) {
@@ -45,6 +47,7 @@ void StockListType::printTrail() {
 	ojy.printRpt("-x", 40);
 }
 
+//print stock
 void StockListType::printStock() {
 	for (int x = 0; x < stockSize - 1; x++) {
 		cout << stock[x]->getSymbol();

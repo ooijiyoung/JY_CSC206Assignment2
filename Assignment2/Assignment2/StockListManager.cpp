@@ -2,6 +2,7 @@
 #include "StockListManager.h"
 #include <iostream>
 #include "JiYoung.h"
+
 void StockListManager::printReportBYGain() {
 	int j;
 	Stock* temp;
@@ -18,6 +19,8 @@ void StockListManager::printReportBYGain() {
 	printStock();
 	printTrail();
 }
+
+//print the report by symbols
 void StockListManager::printReportBySymb() {
 	int j;
 	Stock* temp;
@@ -35,6 +38,7 @@ void StockListManager::printReportBySymb() {
 	printTrail();
 }
 
+//selection after selecting the sorting option
 void StockListManager::sort() {
 	bool valid = false;
 	while (valid == false) {

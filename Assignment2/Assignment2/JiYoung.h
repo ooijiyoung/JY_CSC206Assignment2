@@ -2,11 +2,6 @@
 #include <string>
 using namespace std;
 
-//VERSION 3.0
-/* 
-More updated to add more new features for assignment 2!
-*/
-
 #ifndef _JIYOUNG_
 #define _JIYOUNG_
 #undef max

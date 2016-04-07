@@ -19,7 +19,7 @@ private:
 	double pPrice; //previous price
 	double percent; //percent gain/loss
 public:
-	//setter
+	//mutator
 	void setSymbol(string);
 	void setPrice(double);
 	void setShares(int);
@@ -29,13 +29,12 @@ public:
 	void setLowPrice(double);
 	void setPrevPrice(double);
 	void setPercent(double);
-	//getter
+	//accessor
 	string getSymbol();
 	double getPrice();
 	int getShares();
 	double getOpening();
 	double getClosing();
-	//get High Ahahahhahahha
 	double getHighPrice(); 
 	double getLowPrice();
 	double getPrevPrice();
@@ -45,7 +44,6 @@ public:
 	void printStockInfo();
 	void CalGainLose();	
 	//constructor
-	//ASK: Do we need constructor arr?
 	Stock();
 	Stock(string s, double p, int shr, double oP, double cP, double hP, double lP, double pP, double perc);
 	friend ifstream & operator >> (ifstream & fileIn, Stock &);

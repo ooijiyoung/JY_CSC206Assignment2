@@ -24,6 +24,7 @@ int main(void) {
 	return 0;
 }
 
+//print menu and the path after the selection
 void printMenu() {
 	ojy.clrscr();
 	cout << "Stock Listing Management" << endl;
@@ -60,6 +61,7 @@ void printMenu() {
 		break;
 	}
 }
+
 
 void chckWinVer() {
 	string UserOS = ojy.getOSVersion();
