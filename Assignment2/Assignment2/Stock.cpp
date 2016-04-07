@@ -25,12 +25,6 @@ double Stock::getLowPrice() { return lPrice; }
 double Stock::getPrevPrice() { return pPrice; }
 double Stock::getPercent() { return percent; }
 
-void Stock::setStockInfo(){
-	/*
-	ask sir about this set stock as there's virtually no way to set the stock as we cant enter it in the console 
-	since sir said no input from console
-	*/
-}
 
 void Stock::printStockInfo() {
 	cout << symbol << oPrice << cPrice << hPrice << lPrice << pPrice << percent << shares << endl;

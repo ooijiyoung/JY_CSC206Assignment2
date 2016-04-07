@@ -40,7 +40,6 @@ public:
 	double getPrevPrice();
 	double getPercent();
 	//features
-	void setStockInfo();
 	void printStockInfo();
 	void CalGainLose();	
 	//constructor
